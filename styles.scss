@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(213, 253, 217);
+}
+
+#SnakeGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        font-family: "Ranchers", sans-serif;
+        color: black;
+        letter-spacing: 0.2rem;
+        font-weight: normal;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        padding-top: 0;
+    }
+
+
+
+    #Game{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // border: 1px solid black;
+        padding: 20px;
+
+        .score{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 3px solid black;
+            width: 80%;
+            // padding: 0.5rem;
+            margin-top: 0.2rem;
+            background-color: green;
+            color: white;
+            font-family: "Ranchers", sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            // padding: 0.3rem;
+            #score{
+                width: 100%;
+                text-align: center;
+                border-right: 3px solid black;
+                padding: 0.5rem;
+            }
+            #alert{
+                width: 100%;
+                text-align: center;
+                padding: 0.5rem;
+
+            }
+        }
+
+        #controls{
+            // border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            padding: 1rem;
+
+            .Two{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 2.5rem;
+            // border: 1px solid black;
+
+            }
+
+            button{
+                background-color: green;
+                border: 2px solid black;
+                width: 40px;
+                height: 40px;
+                &:hover{
+                    box-shadow: 0px 0px 2rem green;
+                }
+            }
+        }
+
+        canvas{
+            border: 5px solid black;
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #SnakeGame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        h1{
+            font-family: "Ranchers", sans-serif;
+            color: black;
+            letter-spacing: 0.2rem;
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+    
+        #Game{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // border: 1px solid black;
+            padding: 10px;
+
+            .score{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                border: 3px solid black;
+                width: 100%;
+                // padding: 0.5rem;
+                margin-top: 0.2rem;
+                background-color: green;
+                color: white;
+                font-family: "Ranchers", sans-serif;
+                font-size: 0.8rem;
+                letter-spacing: 0.1rem;
+                padding: 0rem;
+                #score{
+                    width: 100%;
+                    text-align: center;
+                    border-right: 3px solid black;
+                    padding: 0.5rem;
+                }
+                #alert{
+                    width: 100%;
+                    text-align: center;
+                    padding: 0.5rem;
+                    font-size: 0.6rem;
+    
+                }
+            }
+    
+            #controls{
+                // border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                display: flex;
+                padding: 1rem;
+    
+                .Two{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 2.5rem;
+                // border: 1px solid black;
+    
+                }
+    
+                button{
+                    background-color: green;
+                    border: 2px solid black;
+                    width: 3.5rem;
+                    height: 3rem;
+                    &:hover{
+                        box-shadow: 0px 0px 2rem green;
+                    }
+                }
+            }
+    
+            canvas{
+                border: 5px solid black;
+            }
+        }
+    }
+}

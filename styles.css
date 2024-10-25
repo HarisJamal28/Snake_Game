@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(213, 253, 217);
+}
+
+#SnakeGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#SnakeGame h1 {
+  font-family: "Ranchers", sans-serif;
+  color: black;
+  letter-spacing: 0.2rem;
+  font-weight: normal;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding-top: 0;
+}
+#SnakeGame #Game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+#SnakeGame #Game .score {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 3px solid black;
+  width: 80%;
+  margin-top: 0.2rem;
+  background-color: green;
+  color: white;
+  font-family: "Ranchers", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+#SnakeGame #Game .score #score {
+  width: 100%;
+  text-align: center;
+  border-right: 3px solid black;
+  padding: 0.5rem;
+}
+#SnakeGame #Game .score #alert {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+#SnakeGame #Game #controls {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding: 1rem;
+}
+#SnakeGame #Game #controls .Two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+#SnakeGame #Game #controls button {
+  background-color: green;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+}
+#SnakeGame #Game #controls button:hover {
+  box-shadow: 0px 0px 2rem green;
+}
+#SnakeGame #Game canvas {
+  border: 5px solid black;
+}
+
+@media screen and (max-width: 600px) {
+  #SnakeGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #SnakeGame h1 {
+    font-family: "Ranchers", sans-serif;
+    color: black;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  #SnakeGame #Game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  #SnakeGame #Game .score {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
+    width: 100%;
+    margin-top: 0.2rem;
+    background-color: green;
+    color: white;
+    font-family: "Ranchers", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    padding: 0rem;
+  }
+  #SnakeGame #Game .score #score {
+    width: 100%;
+    text-align: center;
+    border-right: 3px solid black;
+    padding: 0.5rem;
+  }
+  #SnakeGame #Game .score #alert {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  }
+  #SnakeGame #Game #controls {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
+  }
+  #SnakeGame #Game #controls .Two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  #SnakeGame #Game #controls button {
+    background-color: green;
+    border: 2px solid black;
+    width: 3.5rem;
+    height: 3rem;
+  }
+  #SnakeGame #Game #controls button:hover {
+    box-shadow: 0px 0px 2rem green;
+  }
+  #SnakeGame #Game canvas {
+    border: 5px solid black;
+  }
+}/*# sourceMappingURL=styles.css.map */
