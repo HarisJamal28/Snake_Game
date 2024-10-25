@@ -176,5 +176,5 @@ let resetTimer;
 
 function startResetTimer() {
     clearTimeout(resetTimer);
-    resetTimer = setTimeout(resetGame, 5000);
+    resetTimer = setTimeout(resetGame, 3000);
 }
